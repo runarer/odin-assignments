@@ -1,0 +1,33 @@
+body {
+  display: grid;
+  grid-template-rows: 50px 1rem;
+  height: 100vh;
+  background: lightblue;
+}
+
+header {
+  display: flex;
+  background: lightcyan;
+  border: 1px solid black;
+  padding: 4px;
+  gap: 10px;
+}
+
+.drop-down-menu {
+  border: 1px solid black;
+}
+
+.menu-item {
+  border: 1px solid black;
+  background: lightcoral;
+}
+.menu-item:hover {
+  background-color: red;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 5px;
+}

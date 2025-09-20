@@ -1,6 +1,6 @@
 body {
   display: grid;
-  grid-template-rows: 50px 1rem;
+  grid-template-rows: 50px auto;
   height: 100vh;
   background: lightblue;
 }
@@ -31,3 +31,85 @@ button {
   border: 1px solid black;
   border-radius: 5px;
 }
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-carousel {
+  border: 1px solid black;
+  width: 300px;
+  height: 500px;
+}
+
+/* Add this with js */
+/* .image-carousel {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-view {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-select-bar {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.left-side-bar,
+.right-side-bar {
+  background: lightgray;
+  opacity: 0;
+  height: 100%;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-side-bar:hover,
+.right-side-bar:hover {
+  opacity: 0.5;
+  /* add image */
+/*}
+
+.image-selector {
+  border: 1px solid gray;
+  background: lightgray;
+  height: 50%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+}
+
+.image-selector.current-image {
+  background-color: gray;
+}
+
+.images {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400%;
+  height: 100%;
+}
+
+.image {
+  width: 298px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */

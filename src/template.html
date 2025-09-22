@@ -3,6 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <title>Testing something</title>
+    <style>
+      input:invalid {
+        background-color: lightcoral;
+      }
+      input:valid {
+        background-color: lightgreen;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+        gap: 5px;
+      }
+      input[type="email"] {
+        appearance: none;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -49,6 +66,38 @@
         <img src="./lasagna.png" alt="Lasagna" />
         <img src="./pancake.png" alt="Pancake" />
       </div>
+      <form action="" id="submit">
+        <label for="mail">Email: </label>
+        <input type="email" name="mail" id="mail" required />
+        <label for="country"></label>
+        <select id="country">
+          <option value="no">Norway</option>
+          <option value="ch">Switzerland</option>
+          <option value="fr">France</option>
+          <option value="de">Germany</option>
+          <option value="nl">The Netherlands</option>
+        </select>
+        <label for="postal">Postal Code:</label>
+        <input type="text" name="postal" id="postal" required />
+        <label for="password1">Password</label>
+        <input
+          type="password"
+          name="password1"
+          id="password1"
+          minlength="8"
+          required
+        />
+        <label for="password2">Re-Enter Password</label>
+        <input
+          type="password"
+          name="password2"
+          id="password2"
+          minlength="8"
+          required
+        />
+        <button type="submit" id="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
     </main>
   </body>
 </html>
